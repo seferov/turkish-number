@@ -1,6 +1,7 @@
 {
     "name": "seferov/turkish-number",
     "description": "Converts numbers to words in Turkish",
+    "keywords": ["turkish number", "turkish", "spelling"],
     "type": "library",
     "require-dev": {
         "phpunit/phpunit": "~6|~7"
