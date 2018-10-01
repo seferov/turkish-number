@@ -1,0 +1,29 @@
+{
+    "name": "seferov/turkish-number",
+    "description": "Converts numbers to words in Turkish",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^7.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Farhad Safarov",
+            "homepage": "https://farhadsafarov.com"
+        }
+    ],
+    "require": {
+        "php": ">= 7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Seferov\\TurkishNumber\\": "src/"
+        },
+        "exclude-from-classmap": ["/tests/"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Seferov\\TurkishNumber\\Tests\\": "tests/"
+        }
+    }
+}
