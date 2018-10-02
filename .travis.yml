@@ -4,6 +4,11 @@ php:
   - 7.0
   - 7.1
   - 7.2
+  - nightly
+
+matrix:
+  allow_failures:
+    - php: nightly
 
 sudo: false
 
@@ -12,7 +17,6 @@ cache:
     - $HOME/.composer/cache
 
 before_install:
-  - phpenv config-rm xdebug.ini
   - composer selfupdate
 
 install: composer install --prefer-dist --no-interaction
